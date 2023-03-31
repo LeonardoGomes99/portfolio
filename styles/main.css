@@ -70,9 +70,20 @@ button:focus-visible {
 
 
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.col {
+  flex: 1;
+  margin: 10px;
+}
 
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #main {
   max-width: 1280px;
@@ -112,6 +123,26 @@ button:focus-visible {
 
 .card {
   padding: 2em;
+}
+
+.card-con {
+  height: 25vh;
+  padding: 20px;
+  border: 1px rgba(52, 52, 52, 0.730) solid;
+  background-color: rgba(52, 52, 52, 0.730);
+  border-radius: 10px;
+}
+
+.card-con li{
+  text-align: left !important;
+}
+
+.card-con span {
+  text-align: left !important;
+}
+
+.section-m {
+  margin-top: 10vh;
 }
 
 .read-the-docs {
