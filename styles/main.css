@@ -1,17 +1,9 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('./bootstrap.min.css');
 
+body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -55,6 +47,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -70,28 +69,6 @@ button:focus-visible {
 
 .header-conf{
   background-size: cover;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex: 1;
-  margin: 10px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -132,42 +109,18 @@ button:focus-visible {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.card-con {
-  height: 25vh;
-  padding: 20px;
-  border: 1px rgba(52, 52, 52, 0.730) solid;
-  background-color: rgba(52, 52, 52, 0.730);
+.col.content {
+  background-color: #1a1a1a;
+  padding: 3rem;
   border-radius: 10px;
 }
 
-.card-con li{
-  text-align: left !important;
+.col.content ul li {
+  text-align: left;
 }
 
-.card-con span {
-  text-align: left !important;
-}
-
-.card-con .con2 {
-  height: 26vh;
-}
-
-.card-con .con3 {
-  height: 27vh;
-}
-
-.card-con.con4 {
-  height: 40vh;
-}
-
-.section-m {
-  margin-top: 10vh;
-}
-
-.read-the-docs {
-  color: #888;
+.col.content .title {
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
