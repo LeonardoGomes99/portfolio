@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
 }
 
+/* Animação */
 body{
   margin:0;
   padding:0;
@@ -142,10 +143,18 @@ button:focus-visible {
   }
 }
 
+.header- {
+  padding: 0.5rem;
+  background-color: #090909;
+  border-radius: 1rem;
+}
+
 .card.card-main {
   padding: 2rem;
   background-color: #1a1a1a; 
   border-radius: 20px;
+  outline: 0;
+  box-shadow: unset;
 }
 
 .card-body ul li {
