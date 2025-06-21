@@ -11,7 +11,7 @@ export const About = () => {
                         <p className="antialiased font-mono text-[33px] text-[#fafafa] mt-4 text-center">
                             Desenvolvedor Full Stack/Cycle
                         </p>
-                        <div className="box-border h-80 w-180">
+                        <div className="box-border h-85 w-180">
                             <p className="antialiased font-sans text-wrap text-[20px] text-[#fafafa] mt-4 text-center">
                                 Proativo, curioso e um entusiasta por tecnologia, busco novos desafios para aplicar meus conhecimentos e fazer a diferença.
                                 Propondo alternativas inovadoras para problemas e aprimorando minhas habilidades continuamente. Acredito na comunicação

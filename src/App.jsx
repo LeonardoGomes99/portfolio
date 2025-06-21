@@ -3,7 +3,7 @@ import { NavBar } from './assets/components/navbar';
 import { About } from './assets/components/about';
 import { Content } from './assets/components/content';
 import { FadeInSquares } from './assets/components/animatedBackground';
-import { Experience } from './assets/components/experience';
+import { ExperienceAndGraduation } from './assets/components/experienceAndGraduation';
 
 export const Main = () => {
   return (
@@ -12,7 +12,7 @@ export const Main = () => {
       <Content>
         <FadeInSquares>
           <About />
-          <Experience />
+          <ExperienceAndGraduation />
         </FadeInSquares>
       </Content>
     </Fragment>
