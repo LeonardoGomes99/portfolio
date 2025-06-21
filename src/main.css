@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Content / content */
+.content {
+    margin-top: 4rem;
+}
+
+/* HEADER / about */
+.header {    
+    position: relative;
+}
+
+
+/* ANIMATED BACKGROUND / animatedBackground */
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.fade-in-squares {    
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #1B1B1F;
+    overflow: hidden;    
+}
+
+.fade-in-squares .square {
+    position: relative;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px red;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 7s ease-in forwards infinite;
+    filter: blur(2px);
+}
+
+.fade-in-squares .square:nth-child(0) {
+    animation-delay: 0s;
+    left: 23vw;
+    top: 68vh;
+    border-color: red;
+}
+
+.fade-in-squares .square:nth-child(1) {
+    animation-delay: 2s;
+    left: 38vw;
+    top: 34vh;
+}
+
+.fade-in-squares .square:nth-child(2) {
+    animation-delay: 4s;
+    left: 86vw;
+    top: 50vh;
+    border-color: red;
+}
+
+.fade-in-squares .square:nth-child(3) {
+    animation-delay: 6s;
+    left: 65vw;
+    top: 27vh;
+}
+
+.fade-in-squares .square:nth-child(4) {
+    animation-delay: 8s;
+    left: 77vw;
+    top: 93vh;
+}
+
+.fade-in-squares .square:nth-child(5) {
+    animation-delay: 10s;
+    left: 5vw;
+    top: 15vh;
+}
