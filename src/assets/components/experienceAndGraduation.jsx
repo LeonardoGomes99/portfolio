@@ -4,11 +4,11 @@ import { Fragment } from "react"
 export const ExperienceAndGraduation = () => {
     return (
         <Fragment>
-            <div className="bg-[black] w-[100%] p-50">
-                <div className="flex justify-center gap-64">
+            <div className="bg-[rgb(31,27,27)] h-screen w-[100%] p-50">
+                <div className="flex justify-center gap-64 m-10">
                     {/* Experiência Profissional */}
                     <div className="flex flex-col items-center">
-                        <h2 className="mb-32 text-2xl font-bold text-gray-900 dark:text-white">Experiência Profissional</h2>
+                        <h2 className="mb-18 text-2xl font-bold text-gray-900 dark:text-white">Experiência Profissional</h2>
                         <ol className="relative border-s border-gray-200 dark:border-gray-700">
                             <li className="mb-10 ms-6">
                                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -65,7 +65,7 @@ export const ExperienceAndGraduation = () => {
                     </div>
                     {/* Formação Acadêmica */}
                     <div className="flex flex-col items-center">
-                        <h2 className="mb-32 text-2xl font-bold text-gray-900 dark:text-white">Formação Acadêmica</h2>
+                        <h2 className="mb-18 text-2xl font-bold text-gray-900 dark:text-white">Formação Acadêmica</h2>
                         <ol className="relative border-s border-gray-200 dark:border-gray-700">
                             <li className="mb-10 ms-6">
                                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
