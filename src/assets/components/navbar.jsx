@@ -15,11 +15,11 @@ export const NavBar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6">
-                        <a href="#home" className="hover:text-gray-300">Sobre Mim</a>
-                        <a href="#features" className="hover:text-gray-300">Skills</a>
-                        <a href="#pricing" className="hover:text-gray-300">Experiencia</a>
-                        <a href="#contact" className="hover:text-gray-300">Projetos</a>
-                        <a href="#contact" className="hover:text-gray-300">Contatos</a>
+                        <a href="#introduction-section" className="hover:text-gray-300"><b>Sobre Mim</b></a>
+                        <a href="#timeline-section" className="hover:text-gray-300"><b>Trajetória Profissional e Acadêmica</b></a>
+                        <a href="#certifications-section" className="hover:text-gray-300"><b>Certificações</b></a>
+                        <a href="#projects-section" className="hover:text-gray-300"><b>Projetos</b></a>
+                        <a href="#contact" className="hover:text-gray-300"><b>Contatos</b></a>
                     </div>
 
                     {/* Mobile menu button */}
@@ -34,10 +34,11 @@ export const NavBar = () => {
             {/* Mobile Menu Dropdown */}
             {isOpen && (
                 <div className="md:hidden bg-[#1B1B1F] px-4 py-2 space-y-2">
-                    <a href="#home" className="block hover:text-gray-300">Sobre Mim</a>
-                    <a href="#features" className="block hover:text-gray-300">Skills</a>
-                    <a href="#pricing" className="block hover:text-gray-300">Projetos</a>
-                    <a href="#contact" className="block hover:text-gray-300">Contatos</a>
+                    <a href="#home" className="block hover:text-gray-300"><b>Sobre Mim</b></a>
+                    <a href="#features" className="block hover:text-gray-300"><b>Trajetória Profissional e Acadêmica</b></a>
+                    <a href="#features" className="block hover:text-gray-300"><b>Certificações</b></a>
+                    <a href="#pricing" className="block hover:text-gray-300"><b>Projetos</b></a>
+                    <a href="#contact" className="block hover:text-gray-300"><b>Contatos</b></a>
                 </div>
             )}
         </nav>

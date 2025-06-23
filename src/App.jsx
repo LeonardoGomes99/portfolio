@@ -1,16 +1,21 @@
 import { Fragment } from 'react'
 import { NavBar } from './assets/components/navbar';
-import { About } from './assets/components/about';
 import { Content } from './assets/components/content';
-import { ExperienceAndGraduation } from './assets/components/experienceAndGraduation';
+import { Introduction } from './assets/components/introduction';
+import { Timeline } from './assets/components/timeline';
+import { Certifications } from './assets/components/certifications';
+import { Projects } from './assets/components/Projects';
+
 
 export const Main = () => {
   return (
     <Fragment>
       <NavBar />
       <Content>
-        <About />
-        <ExperienceAndGraduation />
+        <Introduction />
+        <Timeline />
+        <Certifications />
+        <Projects />
       </Content>
     </Fragment>
   )
