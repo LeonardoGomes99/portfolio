@@ -29,7 +29,7 @@ export const Projects = () => {
                         {
                             title: 'Algoritmos IA',
                             description: 'Projeto da faculdade de desenvolvimento onde o JavaScript implementa diversos algoritmos de inteligência artificial (IA) para um jogo de tabuleiro.',
-                            imgSrc: "https://creajr.crea-pr.org.br/u/posts/15/inteligencia-artificial-ia-quais-as-suas-aplicacoes-na-engenharia-imagem-large.png",
+                            imgSrc: "https://uploads.startups.com.br/2025/03/AsLBE4qe-inteligencia-artificial-cerebro-1024x596.webp",
                             imgAlt: 'IA',
                             href: 'https://github.com/LeonardoGomes99/Game.Busca',
                         },
