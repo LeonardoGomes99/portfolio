@@ -4,7 +4,8 @@ import { Content } from './assets/components/content';
 import { Introduction } from './assets/components/introduction';
 import { Timeline } from './assets/components/timeline';
 import { Certifications } from './assets/components/certifications';
-import { Projects } from './assets/components/Projects';
+import { Projects } from './assets/components/projects';
+import { Footer } from './assets/components/footer';
 
 
 export const Main = () => {
@@ -17,6 +18,7 @@ export const Main = () => {
         <Certifications />
         <Projects />
       </Content>
+      <Footer />
     </Fragment>
   )
 }
