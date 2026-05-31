@@ -5,6 +5,7 @@ import { Reveal } from "./Reveal";
 type Item = {
   title: string;
   org: string;
+  company?: string;
   period: string;
   current?: boolean;
   description: string;
@@ -14,7 +15,8 @@ type Item = {
 const experience: Item[] = [
   {
     title: "Desenvolvedor Backend",
-    org: "Empresa atual",
+    org: "Banco Votorantim",
+    company: "ACT Digital",
     period: "11/2025 — Atual",
     current: true,
     description:
@@ -24,8 +26,8 @@ const experience: Item[] = [
   {
     title: "Desenvolvedor Full Stack / Full Cycle (Senior/Tech Lead)",
     org: "Empresa anterior",
-    period: "10/2024 — 11/2025",
-    current: true,
+    company: "Freelance",
+    period: "10/2024 — 11/2025",    
     description:
       "Liderança técnica e desenvolvimento full cycle de produtos com React, Django, Spring Boot e PostgreSQL, em ambiente containerizado com Docker.",
     tags: ["React JS", "Django", "Spring Boot", "PostgreSQL", "Docker"],
@@ -33,6 +35,7 @@ const experience: Item[] = [
   {
     title: "Desenvolvedor Full Stack / Full Cycle (Pleno)",
     org: "Empresa anterior",
+    company: "Ledware Informática",
     period: "11/2023 — 10/2024",
     description:
       "Atuação ponta-a-ponta em sistemas web, APIs e integrações, com ênfase em performance e qualidade.",
@@ -41,6 +44,7 @@ const experience: Item[] = [
   {
     title: "Desenvolvedor Full Stack / Full Cycle (Junior)",
     org: "Empresa anterior",
+    company: "Ledware Informática ",
     period: "07/2022 — 11/2023",
     description:
       "Desenvolvimento de soluções completas, desde o frontend até o backend, com foco em qualidade e escalabilidade.",
@@ -48,14 +52,16 @@ const experience: Item[] = [
   },
   {
     title: "Software Engineer (Junior)",
-    org: "Consultoria",
+    org: "Empresa anterior",
+    company: "VEXpenses",
     period: "06/2021 — 05/2022",
     description: "Desenvolvimento e manutenção de sistemas em Laravel + MySQL com Docker.",
     tags: ["Laravel", "MySQL", "Docker"],
   },
   {
     title: "Desenvolvedor Full Stack & Suporte (Junior)",
-    org: "Equipe de produto",
+    org: "Empresa anterior",
+    company: "Phooto",
     period: "08/2020 — 06/2021",
     description: "Frontend em Vue.js, backend Laravel e operação em MySQL e OracleDB.",
     tags: ["Laravel", "VueJS", "MySQL", "OracleDB", "Docker"],
@@ -63,6 +69,7 @@ const experience: Item[] = [
   {
     title: "Desenvolvedor Full Stack (Estagiário)",
     org: "Início da carreira",
+    company: "Get Install",
     period: "04/2020 — 07/2020",
     description: "Primeiros projetos profissionais em Flask + PostgreSQL.",
     tags: ["Flask", "PostgreSQL"],
@@ -112,11 +119,10 @@ function TimelineList({ items }: { items: Item[] }) {
               <span className="absolute -left-[1.65rem] top-5 w-4 h-4 rounded-full bg-primary ring-4 ring-background shadow-[0_0_18px_hsla(264,90%,68%,0.7)]" />
               <button
                 onClick={() => setOpenIdx(open ? null : i)}
-                className={`w-full text-left p-5 rounded-xl border bg-card transition-all ${
-                  open
+                className={`w-full text-left p-5 rounded-xl border bg-card transition-all ${open
                     ? "border-primary-glow shadow-[var(--shadow-glow)]"
                     : "border-border hover:border-primary/60"
-                }`}
+                  }`}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
@@ -124,7 +130,7 @@ function TimelineList({ items }: { items: Item[] }) {
                       {item.title}
                     </h4>
                     <p className="text-sm text-muted-foreground mt-1">
-                      {item.org} · {item.period}
+                      {item.company ? `${item.company} · ${item.org}` : item.org} · {item.period}
                     </p>
                   </div>
                   {item.current && (
