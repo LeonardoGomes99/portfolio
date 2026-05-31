@@ -13,9 +13,18 @@ type Item = {
 
 const experience: Item[] = [
   {
-    title: "Desenvolvedor Full Stack / Full Cycle (Senior/Tech Lead)",
+    title: "Desenvolvedor Backend",
     org: "Empresa atual",
-    period: "10/2024 — Atual",
+    period: "11/2025 — Atual",
+    current: true,
+    description:
+      "Desenvolvedor Backend na ACT Digital, atuando como terceiro no Banco Votorantim na área de cobrança. Experiência no desenvolvimento e manutenção de sistemas backend, integração de serviços, APIs e automação de processos voltados ao setor financeiro, com foco em performance, estabilidade e escalabilidade das aplicações. Trabalho em colaboração com equipes multidisciplinares para garantir eficiência operacional e evolução contínua das soluções de cobrança.",
+    tags: ["Java", "Spring boot", "Spring batch", "MySQL", "SQL Server", "SyBase", "Git"],
+  },
+  {
+    title: "Desenvolvedor Full Stack / Full Cycle (Senior/Tech Lead)",
+    org: "Empresa anterior",
+    period: "10/2024 — 11/2025",
     current: true,
     description:
       "Liderança técnica e desenvolvimento full cycle de produtos com React, Django, Spring Boot e PostgreSQL, em ambiente containerizado com Docker.",
