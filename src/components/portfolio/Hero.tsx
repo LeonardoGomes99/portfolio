@@ -11,6 +11,15 @@ export function Hero() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -59,12 +68,14 @@ export function Hero() {
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <a
             href="#projetos"
+            onClick={(e) => handleScrollToSection(e, "#projetos")}
             className="px-7 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary-glow transition-all hover:shadow-[var(--shadow-glow)]"
           >
             Ver projetos
           </a>
           <a
             href="#contato"
+            onClick={(e) => handleScrollToSection(e, "#contato")}
             className="px-7 py-3 rounded-full border border-border text-foreground hover:border-primary-glow hover:text-primary-glow transition-all"
           >
             Entrar em contato

@@ -19,6 +19,15 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
@@ -28,7 +37,11 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
-        <a href="#hero" className="font-bold text-lg tracking-tight">
+        <a 
+          href="#hero" 
+          onClick={(e) => handleScrollToSection(e, "#hero")}
+          className="font-bold text-lg tracking-tight"
+        >
           Leonardo<span className="text-primary">.</span>Gomes
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
@@ -36,6 +49,7 @@ export function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
+                onClick={(e) => handleScrollToSection(e, l.href)}
                 className="hover:text-primary-glow transition-colors"
               >
                 {l.label}
@@ -60,7 +74,10 @@ export function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    handleScrollToSection(e, l.href);
+                    setOpen(false);
+                  }}
                   className="block py-2 text-muted-foreground hover:text-primary-glow"
                 >
                   {l.label}
